@@ -6,8 +6,7 @@ avr_marks_of_students = []
 
 studs = sorted(list(students))
 print(studs)
-list_length = len(grades)
-for i in range(list_length):
+for i in range(len(grades)):
     avr_marks_of_students.append(round(sum(grades[i])/len(grades[i]),2))
 
 my_dict = dict(zip(studs, avr_marks_of_students))
