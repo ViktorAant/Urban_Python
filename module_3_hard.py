@@ -126,24 +126,26 @@ print(result)
 # Дополнительное практическое задание по модулю*
 
 def calculate_structure_sum(data_structure):
-  result = 0
-  for i in data_structure:
-    type_ = type(i)
-    if type_ == int:
-      result += int(i)
-    elif type_ == str:
-      result += len(i)
-    elif type_ == dict:
-      for key, value in (i.items()):
-        result += calculate_structure_sum(key)
-        if type(value) == int:
-          result += value
-        else:
-          result += calculate_structure_sum(value)
-    else:
-      result += calculate_structure_sum(i)
-  return result
-
+  local_result = 0
+  if isinstance(data_structure, int):
+    local_result += data_structure
+  elif isinstance(data_structure, str):
+    local_result += len(data_structure)
+  elif isinstance(data_structure, dict):
+    for pair in data_structure.items():
+      local_result += calculate_structure_sum(pair)
+  elif isinstance(data_structure, list):
+    for value in data_structure:
+      local_result += calculate_structure_sum(value)
+  elif isinstance(data_structure, tuple):
+    for value in data_structure:
+      local_result += calculate_structure_sum(value)
+  elif isinstance(data_structure, set):
+    for value in data_structure:
+      local_result += calculate_structure_sum(value)
+  else:
+    print(f"Invalid data structure: {type(data_structure)}")
+  return local_result
 #----------------------
 data_structure = [
 [1, 2, 3],
@@ -152,6 +154,7 @@ data_structure = [
 "Hello",
 ((), [{(2, 'Urban', ('Urban2', 35))}])
 ]
+
 
 result = calculate_structure_sum(data_structure)
 print(result)
