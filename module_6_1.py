@@ -1,35 +1,31 @@
 # Домашнее задание по теме "Зачем нужно наследование"
 
-class Animal():
+class Animal:
     alive = True  # (живой)
     fed = False  # (накормленный)
 
     def __init__(self, name):
         self.name = name  # индивидуальное название каждого животного
 
-
-class Mammal(Animal):
     # Метод eat должен работать следующим образом:
     # Если переданное растение (food) съедобное - выводит на экран "<self.name> съел <food.name>", меняется атрибут fed на True.
     # Если переданное растение (food) не съедобное - выводит на экран "<self.name> не стал есть <food.name>", меняется атрибут alive на False.
     # Т.е если животному дать съедобное растение, то животное насытится, если не съедобное - погибнет.
     def eat(self, food):
-        if food.edible == True:
+        if food.edible:
             print(f"{self.name} съел {food.name}")
             self.fed = True
         else:
             print(f"{self.name} не стал есть {food.name}")
             self.alive = False
+
+
+class Mammal(Animal):
+    pass
 
 
 class Predator(Animal):
-    def eat(self, food):
-        if food.edible == True:
-            print(f"{self.name} съел {food.name}")
-            self.fed = True
-        else:
-            print(f"{self.name} не стал есть {food.name}")
-            self.alive = False
+    pass
 
 
 class Plant():
