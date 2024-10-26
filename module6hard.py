@@ -49,11 +49,8 @@ class Circle(Figure):
 
     def __init__(self, colour, *side):
         self.set_colour(colour[0], colour[1], colour[2])
-        if not self._Figure__is_valid_sides(*side):
-            self.set_sides(1)
-        else:
-            self.set_sides(*side)
-        __radius = self._Figure__sides[0] / 3.14 / 2
+        self.set_sides(*side)
+        __radius = self.get_sides()[0] / 3.14 / 2
 
     def get_square(self):
         return self.__radius ** 2 * 3.14
@@ -64,18 +61,14 @@ class Triangle(Figure):
 
     def __init__(self, colour, *side):
         self.set_colour(colour[0], colour[1], colour[2])
-        if not self._Figure__is_valid_sides(*side):
+        self.set_sides(*side)
+        # Необходимым и достаточным условием существования треугольника является выполнение следующих неравенств:
+        # a+b>c, a+c>b, b+c>a, (a>0, b>0, c>0)
+        a = self.get_sides()[0]
+        b = self.get_sides()[1]
+        c = self.get_sides()[2]
+        if not (a + b > c or a + c > b or b + c > a):
             self.set_sides(1)
-        else:
-            # Необходимым и достаточным условием существования треугольника является выполнение следующих неравенств:
-            # a+b>c, a+c>b, b+c>a, (a>0, b>0, c>0)
-            a = self.get_sides()[0]
-            b = self.get_sides()[1]
-            c = self.get_sides()[2]
-            if (a + b > c or a + c > b or b + c > a):
-                self.set_sides(*side)
-            else:
-                self.set_sides(1)
 
     def get_square(self):
         # возвращает площадь треугольника. (можно рассчитать по формуле Герона)
@@ -89,8 +82,6 @@ class Cube(Figure):
     def __init__(self, colour, *side):
         self.set_colour(colour[0], colour[1], colour[2])
         self.set_sides(*side)
-        if not self._Figure__is_valid_sides(*side):
-            self.set_sides(1)
 
     def get_volume(self):
         # возвращает объём куба
