@@ -26,20 +26,19 @@ class Figure():
         # служебный, принимает неограниченное кол-во сторон, возвращает True если все стороны целые положительные числа
         # и кол-во новых сторон совпадает с текущим, False - во всех остальных случаях.
         if ( (isinstance(self, Cube) and len(new_sides) == 1) or (not isinstance(self, Cube) and len(new_sides) == self.sides_count) ) and min(new_sides) > 0:
-            # print('__radius  TRUE')
             return True
         else:
             return False
 
     def set_sides(self, *new_sides):
         if self.__is_valid_sides(*new_sides):
-            print(f'YES= {list(new_side)}')
             self.__sides = list(new_sides)
-        else:
-            print('NO')
 
     def get_sides(self):
-        return self.__sides
+        if isinstance(self, Cube):
+            return list(self.__sides*12)
+        else:
+            return self.__sides
 
     def __len__(self):
         return sum(self.__sides)
@@ -68,7 +67,15 @@ class Triangle(Figure):
         if not self._Figure__is_valid_sides(*side):
             self.set_sides(1)
         else:
-            self.set_sides(*side)
+            # Необходимым и достаточным условием существования треугольника является выполнение следующих неравенств:
+            # a+b>c, a+c>b, b+c>a, (a>0, b>0, c>0)
+            a = self.get_sides()[0]
+            b = self.get_sides()[1]
+            c = self.get_sides()[2]
+            if (a + b > c or a + c > b or b + c > a):
+                self.set_sides(*side)
+            else:
+                self.set_sides(1)
 
     def get_square(self):
         # возвращает площадь треугольника. (можно рассчитать по формуле Герона)
@@ -81,36 +88,32 @@ class Cube(Figure):
 
     def __init__(self, colour, *side):
         self.set_colour(colour[0], colour[1], colour[2])
-        print(f'КУБ set_sides side = {list(side)}')
-        self.set_sides(side)
+        self.set_sides(*side)
         if not self._Figure__is_valid_sides(*side):
             self.set_sides(1)
 
     def get_volume(self):
         # возвращает объём куба
-        print(f'КУБ = {self.get_sides()}')
-        return self.get_sides() #[0] ** 3
+        return self.get_sides()[0] ** 3
 
 
-#circle1 = Circle((200, 200, 100), 10) # (Цвет, стороны)
+circle1 = Circle((200, 200, 100), 10) # (Цвет, стороны)
 cube1 = Cube((222, 35, 130), 6)
 
 # Проверка на изменение цветов:
-# circle1.set_colour(55, 66, 77) # Изменится
-# print(circle1.get_colour())
+circle1.set_colour(55, 66, 77) # Изменится
+print(circle1.get_colour())
 cube1.set_colour(300, 70, 15) # Не изменится
 print(cube1.get_colour())
 
 # Проверка на изменение сторон:
 cube1.set_sides(5, 3, 12, 4, 5) # Не изменится
 print(cube1.get_sides())
-# circle1.set_sides(15) # Изменится
-# print(circle1.get_sides())
-#
-# # Проверка периметра (круга), это и есть длина:
-# print(len(circle1))
+circle1.set_sides(15) # Изменится
+print(circle1.get_sides())
+
+# Проверка периметра (круга), это и есть длина:
+print(len(circle1))
 
 # Проверка объёма (куба):
 print(cube1.get_volume())
-
-# tri = Triangle((200, 200, 100), 10,2,4,7)
