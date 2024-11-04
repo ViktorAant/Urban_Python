@@ -32,9 +32,9 @@ class Car():
         if isinstance(numbers, str) and len(numbers) == 6:
             return True
         elif not isinstance(numbers, str):
-            raise IncorrectVinNumber('Некорректный тип данных для номеров')
+            raise IncorrectCarNumbers('Некорректный тип данных для номеров')
         else:
-            raise IncorrectVinNumber('Неверная длина номера')
+            raise IncorrectCarNumbers('Неверная длина номера')
 
 
 class IncorrectVinNumber(Exception):
