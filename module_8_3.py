@@ -18,7 +18,8 @@ class Car():
         # принимает vin_number и проверяет его на корректность.
         # Возвращает True, если корректный, в других случаях выбрасывает исключение.
         # Уровень доступа private.
-        if isinstance(vin_number, int) and 1000000 <= vin_number and vin_number <= 9999999:
+        # if isinstance(vin_number, int) and 1000000 <= vin_number and vin_number <= 9999999:
+        if isinstance(vin_number, int) and 1000000 <= vin_number <= 9999999:
             return True
         elif not isinstance(vin_number, int):
             raise IncorrectVinNumber('Некорректный тип vin номер')
