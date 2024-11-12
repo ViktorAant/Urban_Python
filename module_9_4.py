@@ -6,7 +6,7 @@ second = 'Рамена мало было'
 # Необходимо составить lambda-функцию для следующего выражения - list(map(?, first, second)).
 # Здесь ? - место написания lambda-функции.
 
-print(list(map(lambda x, y: x == y, first, second)))
+print(list(map(lambda x, y: x.strip() == y, first, second)))
 
 
 def get_advanced_writer(file_name):  # file_name - название файла для записи
