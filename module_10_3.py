@@ -15,7 +15,6 @@ class Bank:
     def deposit(self):
         for n in range(100):
             have_it = self.lock.acquire(blocking=False)
-
             if have_it:
                 inc_balance = random.randint(50, 500)
                 self.balance += inc_balance
