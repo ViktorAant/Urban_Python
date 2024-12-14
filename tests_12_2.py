@@ -43,6 +43,16 @@ class TournamentTest(unittest.TestCase):
         self.assertTrue(results[3] == self.runner3.name,
                         f'Ожидали {self.runner3.name}, фактически имеем {results[3]}')
 
+    # дополнительный тест
+    def test_check_order_1_2(self):
+        self.assertGreaterEqual(self.runner1.speed, self.runner2.speed,
+                                f'Скорость первого бегуна должна быть не меньше скорости второго, фактически: {self.runner1.speed} и {self.runner2.speed}')
+
+    # дополнительный тест
+    def test_check_order_2_3(self):
+        self.assertGreaterEqual(self.runner2.speed, self.runner3.speed,
+                                f'Скорость второго бегуна должна быть не меньше скорости третьего, фактически: {self.runner2.speed} и {self.runner3.speed}')
+
 
 if __name__ == '__main__':
     unittest.main()
