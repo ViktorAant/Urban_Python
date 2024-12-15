@@ -1,3 +1,6 @@
+'''
+Лекция. Систематизация тестов
+'''
 import unittest
 import test_12_1
 
