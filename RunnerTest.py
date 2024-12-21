@@ -3,7 +3,6 @@
 Цель: приобрести навык создания простейших Юнит-тестов
 '''
 import unittest
-from collections.abc import Callable
 
 
 class Runner:
