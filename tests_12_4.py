@@ -3,6 +3,10 @@
 Цель: получить опыт использования простейшего логирования совместно с тестами
 '''
 import logging
+
+logging.basicConfig(level=logging.INFO, filemode='w', filename='runner_tests.log', encoding='UTF-8',
+                    format='%(asctime)s | %(levelname)s | %(message)s')
+
 import unittest
 
 
@@ -81,7 +85,4 @@ class RunnerTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO, filemode='w', filename='runner_tests.log', encoding='UTF-8',
-                        format='%(asctime)s | %(levelname)s | %(message)s')
     unittest.main()
-
