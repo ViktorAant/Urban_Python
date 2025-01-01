@@ -10,7 +10,8 @@ import random
 class Bank:
     def __init__(self):
         self.balance = 0
-        self.lock = threading.Lock()
+        self.lock = threading.Condition()
+        self.has_money = threading.Lock()
 
     def deposit(self):
         for n in range(100):
@@ -26,8 +27,9 @@ class Bank:
 
     def take(self):
         for n in range(100):
-            have_it = self.lock.acquire(blocking=False)
-            if have_it:
+            # have_it = self.lock.acquire(blocking=False)
+            # if have_it:
+            with self.lock:
                 dec_balance = random.randint(50, 500)
                 print(f"Запрос на {dec_balance}")
                 if self.balance - dec_balance >= 0:
@@ -35,7 +37,7 @@ class Bank:
                     print(f"Снятие: {dec_balance}. Баланс: {self.balance}")
                 else:
                     print("Запрос отклонён, недостаточно средств")
-                self.lock.release()
+                # self.lock.release()
             time.sleep(0.001)
 
 

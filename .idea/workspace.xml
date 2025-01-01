@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3862dd7e-f4fd-4757-96ec-01242c6a4fcb" name="Changes" comment="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject_Urban.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AIO/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Human.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson7_1/main_pil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MTK2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_9_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module_blank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repka.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_for_new_runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_for_runner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tk_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-001-2023-09-29.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_10_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_10_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_1_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_1_5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_3_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_3_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_runner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +26,6 @@
     <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -148,7 +123,7 @@
     &quot;Python.tk_test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/pythonProject_Urban/AIO&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/pythonProject_Urban/Virtual/module_13_2.py&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -158,7 +133,7 @@
       <recent name="D:\PycharmProjects\pythonProject_Urban" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject_Urban" />
       <option name="ENV_FILES" value="" />
@@ -224,38 +199,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725548885611</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Цикл for. Элементы списка. Полезные функции в цикле">
-      <option name="closed" value="true" />
-      <created>1725893822821</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1725893822821</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Дополнительное практическое задание по модулю 2">
-      <option name="closed" value="true" />
-      <created>1725982998073</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1725982998073</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Домашняя работа по уроку &quot;Способы вызова функции&quot;">
-      <option name="closed" value="true" />
-      <created>1726152131031</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1726152131031</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Домашняя работа по уроку &quot;Способы вызова функции&quot;">
-      <option name="closed" value="true" />
-      <created>1726154098440</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1726154098440</updated>
     </task>
     <task id="LOCAL-00013" summary="Домашняя работа по уроку &quot;Модули и пакеты&quot;">
       <option name="closed" value="true" />
@@ -617,7 +560,39 @@
       <option name="project" value="LOCAL" />
       <updated>1735712322468</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
+      <option name="closed" value="true" />
+      <created>1735715319523</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1735715319523</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
+      <option name="closed" value="true" />
+      <created>1735715834881</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1735715834881</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
+      <option name="closed" value="true" />
+      <created>1735715940015</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1735715940015</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
+      <option name="closed" value="true" />
+      <created>1735716748211</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1735716748211</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
