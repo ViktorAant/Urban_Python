@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3862dd7e-f4fd-4757-96ec-01242c6a4fcb" name="Changes" comment="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;">
+    <list default="true" id="3862dd7e-f4fd-4757-96ec-01242c6a4fcb" name="Changes" comment="Домашнее задание по теме &quot;Создание БД, добавление, выбор и удаление элементов.&quot;">
+      <change afterPath="$PROJECT_DIR$/Virtual/module_13_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject_Urban.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject_Urban.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIO/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +34,12 @@
     &quot;assignee&quot;: &quot;ViktorAant&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ViktorAant/Urban_Python.git&quot;,
-    &quot;accountId&quot;: &quot;7f9a30fc-acf1-4c03-bc02-f901629092d5&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ViktorAant/Urban_Python.git",
+    "accountId": "581e89df-be43-4b26-8045-b58d5dbc9305"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.venv/Whole.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -50,81 +52,84 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in RunnerTest.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in TournamentTest.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in case.pyi.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_12_1.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_for_new_runner.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_for_runner.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in tests_12_2.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in tests_12_4.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.00-001-2023-09-29.executor&quot;: &quot;Run&quot;,
-    &quot;Python.00-001add.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MTK2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bank_deposit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bank_trouble.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bank_with.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_pil.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module6hard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_10_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_10_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_10_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_10_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_10_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_11_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_13_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_13_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_1_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_1_6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_2_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_2_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_2_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_2_hard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_3_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_3_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_3_hard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_4_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_4_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_5_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_5_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_5_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_5_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_5_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_6_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_6_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_6_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_7_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_7_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_7_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_7_file.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_7_format.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_8_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_8_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_8_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_7.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_9_8.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_blank.executor&quot;: &quot;Run&quot;,
-    &quot;Python.module_introspec.executor&quot;: &quot;Run&quot;,
-    &quot;Python.suite_12_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_runner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tests_12_4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tk_test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/pythonProject_Urban/Virtual/module_13_2.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in RunnerTest.py.executor": "Run",
+    "Python tests.Python tests in TournamentTest.py.executor": "Run",
+    "Python tests.Python tests in case.pyi.executor": "Run",
+    "Python tests.Python tests in test_12_1.py.executor": "Run",
+    "Python tests.Python tests in test_for_new_runner.py.executor": "Run",
+    "Python tests.Python tests in test_for_runner.py.executor": "Run",
+    "Python tests.Python tests in tests_12_2.py.executor": "Run",
+    "Python tests.Python tests in tests_12_4.py.executor": "Run",
+    "Python.00-001-2023-09-29.executor": "Run",
+    "Python.00-001add.executor": "Run",
+    "Python.MTK2.executor": "Run",
+    "Python.bank_deposit.executor": "Run",
+    "Python.bank_trouble.executor": "Run",
+    "Python.bank_with.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_pil.executor": "Run",
+    "Python.module6hard.executor": "Run",
+    "Python.module_10_1.executor": "Run",
+    "Python.module_10_2.executor": "Run",
+    "Python.module_10_3.executor": "Run",
+    "Python.module_10_4.executor": "Run",
+    "Python.module_10_5.executor": "Run",
+    "Python.module_11_1.executor": "Run",
+    "Python.module_13_1.executor": "Run",
+    "Python.module_13_2.executor": "Run",
+    "Python.module_13_7.executor": "Run",
+    "Python.module_14_1.executor": "Run",
+    "Python.module_1_5.executor": "Run",
+    "Python.module_1_6.executor": "Run",
+    "Python.module_2_2.executor": "Run",
+    "Python.module_2_3.executor": "Run",
+    "Python.module_2_5.executor": "Run",
+    "Python.module_2_hard.executor": "Run",
+    "Python.module_3_2.executor": "Run",
+    "Python.module_3_4.executor": "Run",
+    "Python.module_3_hard.executor": "Run",
+    "Python.module_4_1.executor": "Run",
+    "Python.module_4_2.executor": "Run",
+    "Python.module_5_1.executor": "Run",
+    "Python.module_5_2.executor": "Run",
+    "Python.module_5_3.executor": "Run",
+    "Python.module_5_4.executor": "Run",
+    "Python.module_5_5.executor": "Run",
+    "Python.module_6_1.executor": "Run",
+    "Python.module_6_2.executor": "Run",
+    "Python.module_6_3.executor": "Run",
+    "Python.module_7_1.executor": "Run",
+    "Python.module_7_2.executor": "Run",
+    "Python.module_7_3.executor": "Run",
+    "Python.module_7_file.executor": "Run",
+    "Python.module_7_format.executor": "Run",
+    "Python.module_8_1.executor": "Run",
+    "Python.module_8_2.executor": "Run",
+    "Python.module_8_3.executor": "Run",
+    "Python.module_9_1.executor": "Run",
+    "Python.module_9_2.executor": "Run",
+    "Python.module_9_3.executor": "Run",
+    "Python.module_9_4.executor": "Run",
+    "Python.module_9_5.executor": "Run",
+    "Python.module_9_6.executor": "Run",
+    "Python.module_9_7.executor": "Run",
+    "Python.module_9_8.executor": "Run",
+    "Python.module_blank.executor": "Run",
+    "Python.module_introspec.executor": "Run",
+    "Python.suite_12_3.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test_runner.executor": "Run",
+    "Python.tests_12_4.executor": "Run",
+    "Python.tk_test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Urban_Projects",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PycharmProjects\pythonProject_Urban\AIO" />
@@ -185,7 +190,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -197,14 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725548885611</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Домашняя работа по уроку &quot;Модули и пакеты&quot;">
-      <option name="closed" value="true" />
-      <created>1727193028968</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1727193028968</updated>
     </task>
     <task id="LOCAL-00015" summary="Домашняя работа по модулю 3 hard">
       <option name="closed" value="true" />
@@ -590,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1735717365462</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Домашнее задание по теме &quot;Создание БД, добавление, выбор и удаление элементов.&quot;">
+      <option name="closed" value="true" />
+      <created>1736187447458</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1736187447458</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Домашнее задание по теме &quot;Форматирование строк&quot;" />
     <MESSAGE value="Домашнее задание по теме &quot;Файлы в операционной системе&quot;" />
     <MESSAGE value="Домашнее задание по теме &quot;Сложные моменты и исключения в стеке вызовов функции&quot;" />
     <MESSAGE value="Домашнее задание по теме &quot;Создание исключений&quot;" />
@@ -619,7 +623,8 @@
     <MESSAGE value="Домашнее задание по теме &quot;Систематизация и пропуск тестов&quot;." />
     <MESSAGE value="Домашнее задание по теме &quot;Логирование&quot;" />
     <MESSAGE value="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашнее задание по теме &quot;Хендлеры обработки сообщений&quot;" />
+    <MESSAGE value="Домашнее задание по теме &quot;Создание БД, добавление, выбор и удаление элементов.&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашнее задание по теме &quot;Создание БД, добавление, выбор и удаление элементов.&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
