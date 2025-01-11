@@ -17,8 +17,7 @@ if not all_products:
     ff.fill_table()
     all_products = ff.get_all_products()
 
-api = "7589123348:AAF7YNKzA1Qi11UqHe26tQFzLPAIFe-5ixo"
-bot = Bot(token=api)
+bot = Bot(token=ff.API)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 calculate = KeyboardButton(text='Рассчитать')
@@ -32,11 +31,13 @@ formulas = InlineKeyboardButton(text='Формулы расчёта', callback_d
 ikb.add(calculate, formulas)
 
 bkb = InlineKeyboardMarkup(resize_keyboard=True)
-buy1 = InlineKeyboardButton(text='Product1', callback_data='product_buying')
-buy2 = InlineKeyboardButton(text='Product2', callback_data='product_buying')
-buy3 = InlineKeyboardButton(text='Product3', callback_data='product_buying')
-buy4 = InlineKeyboardButton(text='Product4', callback_data='product_buying')
-bkb.add(buy1, buy2, buy3, buy4)
+# buy1 = InlineKeyboardButton(text='Product1', callback_data='product_buying')
+# buy2 = InlineKeyboardButton(text='Product2', callback_data='product_buying')
+# buy3 = InlineKeyboardButton(text='Product3', callback_data='product_buying')
+# buy4 = InlineKeyboardButton(text='Product4', callback_data='product_buying')
+# bkb.add(buy1, buy2, buy3, buy4)
+buy1 = InlineKeyboardButton(text='Оплатить', callback_data='product_buying')
+bkb.add(buy1)
 
 
 @dp.message_handler(commands=['start'])
@@ -48,7 +49,8 @@ async def starter(message):
 async def get_buying_list(message):
     for i, row in enumerate(all_products, start=1):
         await message.answer_photo(photo=open(f'pics/{i}.png', 'rb'), \
-                               caption=f'\rНазвание: {row[0]} | Описание: {row[1]} | Цена: {row[2]}\n')
+                                   caption=f'\rНазвание: {row[1]} | Описание: {row[2]} | Цена: {row[3]}\n', \
+                                   reply_markup=bkb)
 
 
 @dp.callback_query_handler(text='product_buying')
